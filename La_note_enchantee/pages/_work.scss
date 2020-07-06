@@ -1,0 +1,208 @@
+
+//      MAIN
+
+
+main
+{
+    height: 80%;
+}
+main h2
+{
+    margin: 30px auto 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+main section
+{
+    background: linear-gradient(#f3cfd4, #faf0f2);
+    width: 70%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 12px rgb(194, 185, 185);
+    border-radius: 3px;
+    margin: auto;
+    font-family: 'Lucida Calligraphy', serif, sans-serif;
+    @include for-big-desktop-up
+    {
+        font-size: 30px;
+    }
+}
+main section .top_strong
+{
+    margin: 0;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    @include for-big-desktop-up
+    {
+   font-size: 50px;
+    }
+}
+main section article
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    @include for-phone-only
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    @include for-big-desktop-up
+    {
+        margin-bottom: 40px;
+    }
+}
+main section article h4
+{
+    font-weight: bold;
+    margin: 0;
+}
+main section article .menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 10px;
+    @include for-tablet-portrait-up
+    {
+        margin-top: 5px;
+    }
+}
+main section article .menu p:nth-child(1)
+{
+    flex: 3;
+    font-size: 13px;
+    margin: 0;
+    @include for-big-desktop-up
+    {
+    font-size: 30px;
+    }
+}
+main section article .menu p:nth-child(2)
+{
+   flex: 1; 
+   font-weight: bold;
+   text-align: right;
+   margin: 0;
+}
+.section-title
+{
+    text-align: center;
+    position: relative;
+}
+.section-title span
+{
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -2px;
+        width: 0%;
+        left: 35%;
+        height: 3px;
+        transition: 0.25s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+        background: #000;
+        text-align: center;
+    }
+    &:hover:after {
+        width: 30%;
+    }
+    @include for-tablet-portrait-up
+    {
+        &:after {
+            left: 25%;
+        }
+        
+        &:hover:after {
+            width: 50%;
+        }
+    }
+    @include for-phone-only
+        {
+            &:after {
+                left: 5%;
+            }
+            
+            &:hover:after {
+                width: 90%;
+            }
+        }
+    @include for-desktop-up
+        {
+            &:after {
+                left: 40%;
+            }
+            
+            &:hover:after {
+                width: 20%;
+            }
+        }
+    @include for-big-desktop-up
+    {
+        &:after {
+            left: 35%;
+            height: 10px;
+            bottom: -10px;
+        }
+        
+        &:hover:after {
+            width: 30%;
+        }
+    }
+    
+}
+.section-title {
+    display: table;
+    white-space: nowrap;
+    text-align: center;
+    
+  }
+.section-title:before, .section-title:after {
+    content: "";
+    display: table-cell;
+    width: 35%;
+    font-size: large;
+    background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=) repeat-x left center;
+    @include for-tablet-portrait-up
+    {
+        width: 25%;
+    }
+    @include for-phone-only
+    {
+        width: 5%;
+    }
+    @include for-desktop-up
+    {
+        width: 40%;
+    }
+    @include for-big-desktop-up
+    {
+    width: 35%;
+    }
+}
+.bottom_strong
+{
+    text-align: center;
+    font-size: 15px;
+    margin: 20px auto;
+    @include for-big-desktop-up
+    {
+   font-size: 40px;
+    }
+}
+
+.red-orange
+{
+    @include color-transition(right, red, orange, 70%);
+    font-size: 30px;
+    @include for-big-desktop-up
+    {
+    font-size: 60px;
+    }
+}

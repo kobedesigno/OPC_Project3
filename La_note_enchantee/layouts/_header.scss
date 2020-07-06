@@ -1,0 +1,28 @@
+//      HEADER
+
+header
+{
+    height: 90px;
+    width: 100%;
+    text-align: center;
+    background-color: $color-primary;
+    display: flex;
+    @include for-big-desktop-up
+    {
+        height: 150px;
+    }
+}
+header h1
+{
+    color: $color-secondary;
+    font-weight: bold;
+    font-size: 45px;
+    margin: auto;
+    @include for-big-desktop-up
+    {
+        font-size: 100px;
+        
+    }
+}
+
+

@@ -1,0 +1,28 @@
+//      BASE
+
+body
+{
+    margin: 0;
+    padding: 0;
+    height : 130vh;
+    @include for-tablet-portrait-up
+    {
+    height: 120vh;
+    }
+    @include for-phone-only
+    {
+        height : 150vh;
+    }
+    @include for-desktop-up
+    {
+        height : 110vh;
+    }
+    @include for-big-desktop-up
+    {
+        font-size: 60px;
+    }
+}
+a
+{
+    text-decoration: none;
+}

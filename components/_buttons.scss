@@ -1,0 +1,53 @@
+
+.btn1 {
+    color: rgb(64, 0, 0);
+    font-weight: bold;
+    background-color: $cd-btn1-start;
+
+    -webkit-transition: font-size 10s;
+        -moz-transition: font-size 10s;
+          -o-transition: font-size 10s;
+             transition: font-size 10s;
+    &:hover {
+        p,i {
+            font-size: 30px;
+            background-color: $cd-btn1-end;
+        }
+    }
+}
+
+
+.btn2 {
+    background-color: $cd-btn2-start;
+    transition: font-size 10s, background-color 10s;
+    &:hover {
+        p {
+            font-size: 30px;
+            background-color: $cd-btn2-end;
+        }
+    }
+}
+
+
+.btn3 {
+    background-color: $cd-btn3-start;
+    transition: font-size 10s, background-color 10s;
+    &:hover {
+        p {
+            font-size: 30px;
+            background-color: $cd-btn3-end;
+        }
+    }
+}
+
+
+.btn4 {
+    background-color: $cd-btn4-start;
+    transition: font-size 10s, background-color 10s;
+    &:hover {
+        p {
+            font-size: 30px;
+            background-color: $cd-btn4-end;
+        }
+    }
+}

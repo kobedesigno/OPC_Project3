@@ -1,0 +1,177 @@
+//      MAIN
+
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    height : 100vh;
+}
+main section
+{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    @include for-tablet-portrait-up
+    {
+        flex-direction: column;
+        margin-top: 0;
+        align-items: center;
+        width: 100%;
+    }
+}
+main section a
+{
+    height: 100%;
+    width: 40%;
+    box-shadow: 1px 1px 12px $color-shadow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    @include for-tablet-portrait-up
+    {
+        margin-top: 40px;
+        width: 70%;
+    }
+    @include for-phone-only 
+    {
+    width: 75%;
+    }
+}
+main section a:nth-child(2)
+{
+    margin-right: 40px;
+    @include for-tablet-portrait-up
+    {
+        margin-right: 0;
+    }
+}
+.second
+{
+    margin-bottom: 40px;
+}
+.menu
+{
+    font-size: 25px;
+}
+p
+{
+ font-size: 18px;
+ margin: 3px auto;
+}
+
+
+//  COLOR
+
+.color1
+{
+    @include color-Menu(rgb(64, 0, 0));
+    margin: 0;
+    text-transform: uppercase;
+}
+.color2
+{
+    @include color-Menu(rgb(190, 91, 25));
+}
+.color3
+{
+    @include color-Menu(rgb(61, 152, 180));
+}
+.color4
+{
+    @include color-Menu(rgb(35, 139, 49));
+}
+
+
+.red-orange
+{
+    @include color-transition(right, red, orange, 70%);
+    font-size: 30px;
+}
+.orange-purple
+{
+    @include color-transition(right, orange, purple, 50%);
+}
+.blue-blue
+{
+    @include color-transition(right, blue, rgb(106, 173, 199), 50%);
+}
+.green-green
+{
+    @include color-transition(right, rgb(11, 124, 26), rgb(120, 221, 111), 50%);
+}
+
+
+
+
+
+
+//  PROCHAINEMENT
+
+
+aside
+{
+    flex: 1;
+}
+aside a
+{
+    height: 50px;
+    width: 320px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: $color-primary;
+    font-size: 30px;
+    color: $color-secondary;
+    margin: 0 auto;
+    line-height: 1.5em;
+    &:hover .loading span {
+        display: inline-block;
+    }
+
+    &:hover aside a div {
+        flex: 1;
+    }
+    @include for-phone-only
+    {
+        width: 220px;
+    }
+}
+aside a p
+{
+    flex: 1;
+    text-align: center;
+    font-size: 30px;
+}
+.loading span
+{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    background-color: $color-secondary;
+    border-radius: 50%;
+    display: none;
+    animation-name: dots;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.loading span:nth-child(2)
+{
+    animation-delay: 0.4s;
+}
+.loading span:nth-child(3)
+{
+    animation-delay: 0.8s;
+}
+@keyframes dots
+{
+    50% {
+        opacity: 0;
+        transform: scale(0.7) translateY(10px);
+    }
+}

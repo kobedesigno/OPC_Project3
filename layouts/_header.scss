@@ -1,0 +1,19 @@
+//      HEADER
+
+header
+{
+    height: 90px;
+    width: 100%;
+    text-align: center;
+    background-color: $color-primary;
+    display: flex;
+}
+header h1
+{
+    color: $color-secondary;
+    font-weight: bold;
+    font-size: 45px;
+    margin: auto;
+}
+
+
