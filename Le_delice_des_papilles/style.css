@@ -167,9 +167,15 @@ main {
   height: 80%;
 }
 
+@media (max-width: 768px) {
+  main {
+    height: 100%;
+  }
+}
+
 @media (max-width: 425px) {
   main {
-    height: 60%;
+    height: 100%;
   }
 }
 
@@ -315,6 +321,7 @@ main section article .menu p:nth-child(1) {
 @media (min-width: 2560px) {
   main section article .menu p:nth-child(1) {
     font-size: 30px;
+    margin-top: 20px;
   }
 }
 
@@ -339,7 +346,7 @@ main section article .menu p:nth-child(2) {
   position: absolute;
   bottom: -6px;
   width: 0%;
-  left: 13%;
+  left: 20%;
   height: 3px;
   -webkit-transition: 0.25s cubic-bezier(0.72, -0.01, 0.19, 0.92);
   transition: 0.25s cubic-bezier(0.72, -0.01, 0.19, 0.92);
@@ -348,44 +355,45 @@ main section article .menu p:nth-child(2) {
 }
 
 .section-title span:hover:after {
-  width: 73%;
+  width: 60%;
 }
 
 @media (max-width: 768px) {
   .section-title span:after {
-    left: 25%;
+    left: 0%;
   }
   .section-title span:hover:after {
-    width: 50%;
+    width: 100%;
   }
 }
 
 @media (max-width: 425px) {
   .section-title span:after {
-    left: 5%;
+    left: 0%;
+    bottom: -25px;
   }
   .section-title span:hover:after {
-    width: 90%;
+    width: 100%;
   }
 }
 
 @media (min-width: 1440px) {
   .section-title span:after {
-    left: 40%;
+    left: 20%;
   }
   .section-title span:hover:after {
-    width: 20%;
+    width: 60%;
   }
 }
 
 @media (min-width: 2560px) {
   .section-title span:after {
-    left: 35%;
-    height: 10px;
-    bottom: -10px;
+    left: 20%;
+    height: 5px;
+    bottom: -25px;
   }
   .section-title span:hover:after {
-    width: 30%;
+    width: 60%;
   }
 }
 
@@ -406,6 +414,12 @@ section article .section-title {
 @media (max-width: 425px) {
   section article .section-title {
     margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 2560px) {
+  section article .section-title {
+    width: 52%;
   }
 }
 

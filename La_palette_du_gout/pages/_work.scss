@@ -8,11 +8,11 @@ main
     
     @include for-tablet-portrait-up
     {
-      
+        height: 100%;
     }
     @include for-phone-only
     {
-        height: 60%;
+        height: 100%;
     }
     @include for-desktop-up
     {
@@ -100,8 +100,8 @@ main section article:nth-child(4)
     color: $color-black;
     .section-title:before, .section-title:after {
         border-bottom:5px solid $color-green-light;
-    }
 }
+    }
 main section article h4
 {
     font-weight: bold;
@@ -128,6 +128,7 @@ main section article .menu p:nth-child(1)
     @include for-big-desktop-up
     {
     font-size: 30px;
+    margin-top: 20px;
     }
 }
 main section article .menu p:nth-child(2)
@@ -150,55 +151,56 @@ main section article .menu p:nth-child(2)
         position: absolute;
         bottom: -6px;
         width: 0%;
-        left: 13%;
+        left: 20%;
         height: 3px;
         transition: 0.25s cubic-bezier(0.72,-0.01, 0.19, 0.92);
         background: #000;
         text-align: center;
     }
     &:hover:after {
-        width: 73%;
+        width: 60%;
     }
     @include for-tablet-portrait-up
     {
         &:after {
-            left: 25%;
+            left: 0%;
         }
         
         &:hover:after {
-            width: 50%;
+            width: 100%;
         }
     }
     @include for-phone-only
         {
             &:after {
-                left: 5%;
+                left: 0%;
+                bottom: -25px;
             }
             
             &:hover:after {
-                width: 90%;
+                width: 100%;
             }
         }
     @include for-desktop-up
         {
             &:after {
-                left: 40%;
+                left: 20%;
             }
             
             &:hover:after {
-                width: 20%;
+                width: 60%;
             }
         }
     @include for-big-desktop-up
     {
         &:after {
-            left: 35%;
-            height: 10px;
-            bottom: -10px;
+            left: 20%;
+            height: 5px;
+            bottom: -25px;
         }
         
         &:hover:after {
-            width: 30%;
+            width: 60%;
         }
     }
     
@@ -228,7 +230,7 @@ section article .section-title{
   }
   @include for-big-desktop-up
   {
-
+    width:52%;
   }
 }
 

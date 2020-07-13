@@ -23,10 +23,18 @@ footer
 footer a:nth-child(1)
 {
     font-size: 30px;
+    @include for-big-desktop-up
+ {
+     font-size: 60px;
+ }
 }
 footer a:nth-child(2)
 {
     font-size: 30px;
+    @include for-big-desktop-up
+ {
+     font-size: 60px;
+ }
 }
 .mentions
 {

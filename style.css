@@ -15,35 +15,46 @@ a {
   color: #400000;
   font-weight: bold;
   background-color: #f8dadb;
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
   -webkit-transition: font-size 10s;
   transition: font-size 10s;
 }
 
-.btn1:hover p, .btn1:hover i {
-  font-size: 30px;
+.btn1:hover {
   background-color: rgba(250, 211, 213, 0.5);
+}
+
+.btn1:hover p, .btn1:hover i {
+  font-size: 50px;
 }
 
 .btn2 {
   background-color: #f8f0f7;
-  -webkit-transition: font-size 10s, background-color 10s;
-  transition: font-size 10s, background-color 10s;
+  -webkit-transition: font-size 10s, background-color 2s;
+  transition: font-size 10s, background-color 2s;
+}
+
+.btn2:hover {
+  background-color: rgba(245, 231, 244, 0.5);
 }
 
 .btn2:hover p {
-  font-size: 30px;
-  background-color: rgba(245, 231, 244, 0.5);
+  font-size: 50px;
 }
 
 .btn3 {
   background-color: #f4f4f5;
-  -webkit-transition: font-size 10s, background-color 10s;
-  transition: font-size 10s, background-color 10s;
+  -webkit-transition: font-size 10s, background-color 2s;
+  transition: font-size 10s, background-color 2s;
+}
+
+.btn3:hover {
+  background-color: rgba(244, 244, 245, 0.5);
 }
 
 .btn3:hover p {
-  font-size: 30px;
-  background-color: rgba(244, 244, 245, 0.5);
+  font-size: 50px;
 }
 
 .btn4 {
@@ -52,9 +63,12 @@ a {
   transition: font-size 10s, background-color 10s;
 }
 
-.btn4:hover p {
-  font-size: 30px;
+.btn4:hover {
   background-color: rgba(255, 255, 255, 0);
+}
+
+.btn4:hover p {
+  font-size: 50px;
 }
 
 header {
@@ -67,11 +81,23 @@ header {
   display: flex;
 }
 
+@media (min-width: 2560px) {
+  header {
+    height: 200px;
+  }
+}
+
 header h1 {
   color: #FFA726;
   font-weight: bold;
   font-size: 45px;
   margin: auto;
+}
+
+@media (min-width: 2560px) {
+  header h1 {
+    font-size: 90px;
+  }
 }
 
 footer {
@@ -113,8 +139,20 @@ footer a:nth-child(1) {
   font-size: 30px;
 }
 
+@media (min-width: 2560px) {
+  footer a:nth-child(1) {
+    font-size: 60px;
+  }
+}
+
 footer a:nth-child(2) {
   font-size: 30px;
+}
+
+@media (min-width: 2560px) {
+  footer a:nth-child(2) {
+    font-size: 60px;
+  }
 }
 
 .mentions {
@@ -168,11 +206,23 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  main {
+    height: 210vh;
+  }
+}
+
+@media (max-width: 425px) {
+  main {
+    height: 190vh;
+  }
 }
 
 main section {
@@ -202,7 +252,6 @@ main section {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
   }
 }
 
@@ -229,14 +278,10 @@ main section a {
 
 @media (max-width: 768px) {
   main section a {
-    margin-top: 40px;
-    width: 70%;
-  }
-}
-
-@media (max-width: 425px) {
-  main section a {
-    width: 75%;
+    margin-top: 10%;
+    max-height: 450px;
+    min-height: 300px;
+    width: 50%;
   }
 }
 
@@ -258,9 +303,34 @@ main section a:nth-child(2) {
   font-size: 25px;
 }
 
+@media (min-width: 1200px) {
+  .menu {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .menu {
+    font-size: 60px;
+  }
+}
+
 p {
   font-size: 18px;
   margin: 3px auto;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 2560px) {
+  p {
+    font-size: 60px;
+  }
 }
 
 .color1 {
@@ -316,6 +386,14 @@ aside {
           flex: 1;
 }
 
+@media (max-width: 425px) {
+  aside {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+}
+
 aside a {
   height: 50px;
   width: 320px;
@@ -336,6 +414,7 @@ aside a {
 
 aside a:hover .loading span {
   display: inline-block;
+  margin-right: 5px;
 }
 
 aside a:hover aside a div {
@@ -350,12 +429,27 @@ aside a:hover aside a div {
   }
 }
 
+@media (min-width: 2560px) {
+  aside a {
+    width: 600px;
+    height: 100px;
+    border-radius: 30px;
+    line-height: 3em;
+  }
+}
+
 aside a p {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: center;
   font-size: 30px;
+}
+
+@media (min-width: 2560px) {
+  aside a p {
+    font-size: 60px;
+  }
 }
 
 .loading span {

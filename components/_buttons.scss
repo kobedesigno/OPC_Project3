@@ -3,15 +3,16 @@
     color: rgb(64, 0, 0);
     font-weight: bold;
     background-color: $cd-btn1-start;
+    transition: background-color 2s;
 
     -webkit-transition: font-size 10s;
         -moz-transition: font-size 10s;
           -o-transition: font-size 10s;
              transition: font-size 10s;
     &:hover {
+        background-color: $cd-btn1-end;
         p,i {
-            font-size: 30px;
-            background-color: $cd-btn1-end;
+            font-size: 50px;      
         }
     }
 }
@@ -19,11 +20,11 @@
 
 .btn2 {
     background-color: $cd-btn2-start;
-    transition: font-size 10s, background-color 10s;
+    transition: font-size 10s, background-color 2s;
     &:hover {
+        background-color: $cd-btn2-end;
         p {
-            font-size: 30px;
-            background-color: $cd-btn2-end;
+            font-size: 50px;
         }
     }
 }
@@ -31,11 +32,11 @@
 
 .btn3 {
     background-color: $cd-btn3-start;
-    transition: font-size 10s, background-color 10s;
+    transition: font-size 10s, background-color 2s;
     &:hover {
+        background-color: $cd-btn3-end;
         p {
-            font-size: 30px;
-            background-color: $cd-btn3-end;
+            font-size: 50px;
         }
     }
 }
@@ -45,9 +46,9 @@
     background-color: $cd-btn4-start;
     transition: font-size 10s, background-color 10s;
     &:hover {
+        background-color: $cd-btn4-end;
         p {
-            font-size: 30px;
-            background-color: $cd-btn4-end;
+            font-size: 50px;
         }
     }
 }

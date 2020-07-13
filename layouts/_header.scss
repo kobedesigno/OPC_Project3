@@ -7,6 +7,10 @@ header
     text-align: center;
     background-color: $color-primary;
     display: flex;
+    @include for-big-desktop-up
+ {
+    height: 200px;;
+ }
 }
 header h1
 {
@@ -14,6 +18,10 @@ header h1
     font-weight: bold;
     font-size: 45px;
     margin: auto;
+    @include for-big-desktop-up
+ {
+     font-size: 90px;
+ }
 }
 
 

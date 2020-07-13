@@ -4,8 +4,16 @@
 main
 {
     display: flex;
+    height: 100vh;
     flex-direction: column;
-    height : 100vh;
+    @include for-tablet-portrait-up
+    {
+        height: 210vh;
+    }
+    @include for-phone-only 
+    {
+        height: 190vh;
+    }
 }
 main section
 {
@@ -19,7 +27,6 @@ main section
         flex-direction: column;
         margin-top: 0;
         align-items: center;
-        width: 100%;
     }
 }
 main section a
@@ -34,12 +41,10 @@ main section a
     border-radius: 2px;
     @include for-tablet-portrait-up
     {
-        margin-top: 40px;
-        width: 70%;
-    }
-    @include for-phone-only 
-    {
-    width: 75%;
+        margin-top: 10%;
+        max-height: 450px;
+        min-height: 300px;
+        width: 50%;
     }
 }
 main section a:nth-child(2)
@@ -50,6 +55,12 @@ main section a:nth-child(2)
         margin-right: 0;
     }
 }
+main section a:nth-child(1)
+{
+    @include for-tablet-portrait-up
+    {
+    }
+}
 .second
 {
     margin-bottom: 40px;
@@ -57,11 +68,28 @@ main section a:nth-child(2)
 .menu
 {
     font-size: 25px;
+    @include for-desktop-up 
+    {
+        font-size: 35px;
+    }
+    @include for-big-desktop-up
+ {
+     font-size: 60px;
+ }
 }
 p
 {
  font-size: 18px;
  margin: 3px auto;
+ text-align: center;
+ @include for-desktop-up 
+ {
+     font-size: 30px;
+ }
+    @include for-big-desktop-up
+ {
+     font-size: 60px;
+ }
 }
 
 
@@ -116,6 +144,10 @@ p
 aside
 {
     flex: 1;
+    @include for-phone-only
+    {
+        flex: 2;
+    }
 }
 aside a
 {
@@ -131,6 +163,7 @@ aside a
     line-height: 1.5em;
     &:hover .loading span {
         display: inline-block;
+        margin-right: 5px;
     }
 
     &:hover aside a div {
@@ -140,12 +173,23 @@ aside a
     {
         width: 220px;
     }
+    @include for-big-desktop-up
+ {
+     width: 600px;
+     height: 100px;
+     border-radius: 30px;
+     line-height: 3em;
+ }
 }
 aside a p
 {
     flex: 1;
     text-align: center;
     font-size: 30px;
+    @include for-big-desktop-up
+ {
+     font-size: 60px;
+ }
 }
 .loading span
 {
