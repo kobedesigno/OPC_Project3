@@ -251,7 +251,7 @@ main section article {
   }
 }
 
-main section article:nth-child(1) {
+main section article:nth-child(2) {
   background-image: -webkit-gradient(linear, left top, right top, from(#094e1a), color-stop(70%, #abeb9b));
   background-image: linear-gradient(to right, #094e1a, #abeb9b 70%);
   color: transparent;
@@ -259,21 +259,13 @@ main section article:nth-child(1) {
   background-clip: text;
 }
 
-main section article:nth-child(2) {
-  color: black;
-}
-
-main section article:nth-child(2) .section-title:before, main section article:nth-child(2) .section-title:after {
-  border-bottom: 5px solid;
-  border-bottom-color: #abeb9b;
-}
-
 main section article:nth-child(3) {
   color: black;
 }
 
 main section article:nth-child(3) .section-title:before, main section article:nth-child(3) .section-title:after {
-  border-bottom: 5px solid #abeb9b;
+  border-bottom: 5px solid;
+  border-bottom-color: #abeb9b;
 }
 
 main section article:nth-child(4) {
@@ -281,6 +273,14 @@ main section article:nth-child(4) {
 }
 
 main section article:nth-child(4) .section-title:before, main section article:nth-child(4) .section-title:after {
+  border-bottom: 5px solid #abeb9b;
+}
+
+main section article:nth-child(5) {
+  color: black;
+}
+
+main section article:nth-child(5) .section-title:before, main section article:nth-child(5) .section-title:after {
   border-bottom: 5px solid #abeb9b;
 }
 
@@ -485,5 +485,9 @@ section article .section-title:after {
   section article .section-title:after {
     width: 70%;
   }
+}
+
+.lesmenus {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

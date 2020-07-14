@@ -76,25 +76,25 @@ main section article
         margin-bottom: 40px;
     }
 }
-main section article:nth-child(1)
+main section article:nth-child(2)
 {
     @include color-transition(right, $color-blue-dark, $color-blue-light, 70% );
 }
-main section article:nth-child(2)
+main section article:nth-child(3)
 {
     color: $color-black;
     .section-title:before, .section-title:after {
         border-bottom:5px solid $color-blue-dark;
     }
 }
-main section article:nth-child(3)
+main section article:nth-child(4)
 {
     color: $color-black;
     .section-title:before, .section-title:after {
         border-bottom:5px solid $color-blue;
     }
 }
-main section article:nth-child(4)
+main section article:nth-child(5)
 {
     color: $color-black;
     .section-title:before, .section-title:after {
@@ -304,3 +304,8 @@ section article .section-title:after{
 //     width: 35%;
 //     }
 // }
+
+.lesmenus
+{
+    display: none;
+}

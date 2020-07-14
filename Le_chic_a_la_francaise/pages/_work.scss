@@ -58,25 +58,25 @@ main section article
         margin-bottom: 40px;
     }
 }
-main section article:nth-child(1)
+main section article:nth-child(2)
 {
     @include color-transition(right, $color-first-article, rgb(80, 117, 197), 70% )
 }
-main section article:nth-child(2)
+main section article:nth-child(3)
 {
     color: $color-first-article;
     .section-title:before, .section-title:after {
         border-bottom:5px solid $color-first-article;
     }
 }
-main section article:nth-child(3)
+main section article:nth-child(4)
 {
     color: $color-second-article;
     .section-title:before, .section-title:after {
         border-bottom:5px solid $color-second-article;
     }
 }
-main section article:nth-child(4)
+main section article:nth-child(5)
 {
     color: $color-third-article;
     .section-title:before, .section-title:after {
@@ -287,3 +287,8 @@ section article .section-title:after{
 //     width: 35%;
 //     }
 // }
+
+.lesmenus
+{
+    display: none;
+}
