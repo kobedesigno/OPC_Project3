@@ -11,7 +11,7 @@ footer
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    @include for-tablet-portrait-up
+    @include for-phone-only
     {
         height: 15%;
         display: flex;

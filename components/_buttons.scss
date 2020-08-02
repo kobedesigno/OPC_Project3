@@ -2,53 +2,43 @@
 .btn1 {
     color: rgb(64, 0, 0);
     font-weight: bold;
+    font-family: 'Lucida Calligraphy', serif, sans-serif;
     background-color: $cd-btn1-start;
-    transition: background-color 2s;
-
-    -webkit-transition: font-size 10s;
-        -moz-transition: font-size 10s;
-          -o-transition: font-size 10s;
-             transition: font-size 10s;
+    transition: transform 1s, background-color 1000ms;
     &:hover {
-        background-color: $cd-btn1-end;
-        p,i {
-            font-size: 50px;      
-        }
+        transform: scale(1.10);
+        background-color: lighten($cd-btn4-start, 5);
     }
 }
 
 
 .btn2 {
+    font-family: 'Lato', serif, sans-serif;
     background-color: $cd-btn2-start;
-    transition: font-size 10s, background-color 2s;
+    transition: transform 1s, background-color 1000ms;
     &:hover {
-        background-color: $cd-btn2-end;
-        p {
-            font-size: 50px;
-        }
+        transform: scale(1.10);
+        background-color: lighten($cd-btn4-start, 40);
     }
 }
 
-
 .btn3 {
+    font-family: "cursive", serif, sans-serif;
     background-color: $cd-btn3-start;
-    transition: font-size 10s, background-color 2s;
+    transition: transform 1s, background-color 1000ms;
     &:hover {
-        background-color: $cd-btn3-end;
-        p {
-            font-size: 50px;
-        }
+        transform: scale(1.10);
+        background-color: darken($cd-btn4-start, 40);
     }
 }
 
 
 .btn4 {
+    font-family: "cursive", serif, sans-serif;
     background-color: $cd-btn4-start;
-    transition: font-size 10s, background-color 10s;
+    transition: transform 1s, background-color 1000ms;
     &:hover {
-        background-color: $cd-btn4-end;
-        p {
-            font-size: 50px;
-        }
+        transform: scale(1.10);
+        background-color: lighten($cd-btn4-start, 5);
     }
 }

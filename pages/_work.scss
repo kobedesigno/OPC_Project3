@@ -4,16 +4,24 @@
 main
 {
     display: flex;
-    height: 100vh;
+    height: 140vh;
     flex-direction: column;
     @include for-tablet-portrait-up
     {
-        height: 210vh;
+        height: 330vh;
     }
     @include for-phone-only 
     {
-        height: 190vh;
+        height: 330vh;
     }
+    @include for-desktop-up 
+    {
+        height: 250vh;
+    }
+    @include for-big-desktop-up
+ {
+   
+ }
 }
 main section
 {
@@ -21,18 +29,27 @@ main section
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 60px;
     @include for-tablet-portrait-up
     {
         flex-direction: column;
         margin-top: 0;
         align-items: center;
     }
+    @include for-desktop-up 
+    {
+        margin-top: 80px;
+    }
+    @include for-big-desktop-up
+    {
+        margin-top: 120px;
+    }
 }
 main section a
 {
     height: 100%;
     width: 40%;
+    min-height: 500px;
     box-shadow: 1px 1px 12px $color-shadow;
     display: flex;
     flex-direction: column;
@@ -41,24 +58,38 @@ main section a
     border-radius: 2px;
     @include for-tablet-portrait-up
     {
-        margin-top: 10%;
-        max-height: 450px;
-        min-height: 300px;
+        margin-top: 8%;
+        min-height: 400px;
         width: 50%;
+    }
+    @include for-desktop-up 
+    {
+        max-width: 35%;
+    }
+    @include for-big-desktop-up
+ {
+    
+    
+ }
+    @include for-phone-only 
+    {
+        margin-top: 10%;
     }
 }
 main section a:nth-child(2)
 {
-    margin-right: 40px;
+    margin-right: 60px;
     @include for-tablet-portrait-up
     {
         margin-right: 0;
     }
-}
-main section a:nth-child(1)
-{
-    @include for-tablet-portrait-up
+    @include for-desktop-up 
     {
+        margin-right: 80px;
+    }
+    @include for-big-desktop-up
+    {
+        margin-right: 120px;
     }
 }
 .second
@@ -67,29 +98,45 @@ main section a:nth-child(1)
 }
 .menu
 {
-    font-size: 25px;
+    font-size: 35px;
     @include for-desktop-up 
     {
-        font-size: 35px;
+        font-size: 45px;
     }
     @include for-big-desktop-up
  {
      font-size: 60px;
  }
+ @include for-tablet-portrait-up
+    {
+        font-size: 30px;
+    }
+    @include for-phone-only
+    {
+        font-size: 25px;
+    }
 }
 p
 {
- font-size: 18px;
+ font-size: 30px;
  margin: 3px auto;
  text-align: center;
  @include for-desktop-up 
  {
-     font-size: 30px;
+     font-size: 45px;
  }
     @include for-big-desktop-up
  {
      font-size: 60px;
  }
+ @include for-tablet-portrait-up
+    {
+        font-size: 30px;
+    }
+    @include for-phone-only 
+    {
+        font-size: 25px;
+    }
 }
 
 
@@ -144,15 +191,13 @@ p
 aside
 {
     flex: 1;
-    @include for-phone-only
-    {
-        flex: 2;
-    }
+    min-height:200px;
 }
+
 aside a
 {
     height: 50px;
-    width: 320px;
+    width: 380px;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -160,6 +205,7 @@ aside a
     font-size: 30px;
     color: $color-secondary;
     margin: 0 auto;
+    padding: auto 10px;
     line-height: 1.5em;
     &:hover .loading span {
         display: inline-block;
@@ -171,14 +217,28 @@ aside a
     }
     @include for-phone-only
     {
-        width: 220px;
+     width: 300px;
+     margin-top: 10px;
+    }
+    @include for-tablet-portrait-up
+    {
+        margin-top: 20px;
+    }
+    @include for-desktop-up 
+    {
+        width: 500px;
+        height: 90px;
+        line-height: 2.7em;
+        border-radius: 30px;
+        margin-top: 30px;
     }
     @include for-big-desktop-up
  {
-     width: 600px;
-     height: 100px;
+     width: 800px;
+     height: 130px;
      border-radius: 30px;
-     line-height: 3em;
+     line-height: 3.8em;
+     margin-top: 40px;
  }
 }
 aside a p
@@ -186,10 +246,22 @@ aside a p
     flex: 1;
     text-align: center;
     font-size: 30px;
+    @include for-phone-only
+    {
+        
+    }
+    @include for-tablet-portrait-up
+    {
+     
+    }
+    @include for-desktop-up 
+    {
+        font-size: 40px;
+    }
     @include for-big-desktop-up
- {
-     font-size: 60px;
- }
+    {
+     font-size: 70px;
+    }
 }
 .loading span
 {
@@ -203,6 +275,17 @@ aside a p
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    @include for-desktop-up 
+    {
+        width: 30px;
+        height: 30px;
+    }
+    @include for-big-desktop-up
+    {
+     width: 45px;
+     height: 45px;
+    }
+    
 }
 .loading span:nth-child(2)
 {
