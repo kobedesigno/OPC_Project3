@@ -15,7 +15,7 @@ a {
   color: #400000;
   font-weight: bold;
   font-family: 'Lucida Calligraphy', serif, sans-serif;
-  background-color: #f8dadb;
+  background-color: rgba(250, 211, 213, 0.521);
   -webkit-transition: background-color 1000ms, -webkit-transform 1s;
   transition: background-color 1000ms, -webkit-transform 1s;
   transition: transform 1s, background-color 1000ms;
@@ -25,12 +25,12 @@ a {
 .btn1:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background-color: white;
+  background-color: rgba(251, 220, 222, 0.521);
 }
 
 .btn2 {
   font-family: 'Lato', serif, sans-serif;
-  background-color: #f8f0f7;
+  background-color: rgba(245, 231, 244, 0.521);
   -webkit-transition: background-color 1000ms, -webkit-transform 1s;
   transition: background-color 1000ms, -webkit-transform 1s;
   transition: transform 1s, background-color 1000ms;
@@ -40,12 +40,12 @@ a {
 .btn2:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.521);
 }
 
 .btn3 {
   font-family: "cursive", serif, sans-serif;
-  background-color: #f4f4f5;
+  background-color: rgba(222, 222, 223, 0.521);
   -webkit-transition: background-color 1000ms, -webkit-transform 1s;
   transition: background-color 1000ms, -webkit-transform 1s;
   transition: transform 1s, background-color 1000ms;
@@ -55,7 +55,7 @@ a {
 .btn3:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background-color: #999999;
+  background-color: rgba(248, 248, 248, 0.521);
 }
 
 .btn4 {

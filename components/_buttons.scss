@@ -3,32 +3,32 @@
     color: rgb(64, 0, 0);
     font-weight: bold;
     font-family: 'Lucida Calligraphy', serif, sans-serif;
-    background-color: $cd-btn1-start;
+    background-color: $cd-btn1-end;
     transition: transform 1s, background-color 1000ms;
     &:hover {
         transform: scale(1.10);
-        background-color: lighten($cd-btn4-start, 5);
+        background-color: lighten($cd-btn1-end, 2%);
     }
 }
 
 
 .btn2 {
     font-family: 'Lato', serif, sans-serif;
-    background-color: $cd-btn2-start;
+    background-color: $cd-btn2-end;
     transition: transform 1s, background-color 1000ms;
     &:hover {
         transform: scale(1.10);
-        background-color: lighten($cd-btn4-start, 40);
+        background-color: lighten($cd-btn2-end, 10%);
     }
 }
 
 .btn3 {
     font-family: "cursive", serif, sans-serif;
-    background-color: $cd-btn3-start;
+    background-color: $cd-btn3-end;
     transition: transform 1s, background-color 1000ms;
     &:hover {
         transform: scale(1.10);
-        background-color: darken($cd-btn4-start, 40);
+        background-color: lighten($cd-btn3-end, 10%);
     }
 }
 
