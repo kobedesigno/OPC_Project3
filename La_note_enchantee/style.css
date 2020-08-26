@@ -171,6 +171,12 @@ main {
   height: 80%;
 }
 
+@media (max-width: 425px) {
+  main {
+    height: 110%;
+  }
+}
+
 main h2 {
   margin: 30px auto 20px auto;
   text-align: center;
@@ -268,6 +274,16 @@ main section article .menu {
   }
 }
 
+@media (max-width: 425px) {
+  main section article .menu {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 main section article .menu p:nth-child(1) {
   -webkit-box-flex: 3;
       -ms-flex: 3;
@@ -289,6 +305,12 @@ main section article .menu p:nth-child(2) {
   font-weight: bold;
   text-align: right;
   margin: 0;
+}
+
+@media (max-width: 425px) {
+  main section article .menu p:nth-child(2) {
+    text-align: center;
+  }
 }
 
 .section-title {
@@ -369,7 +391,7 @@ section article .section-title {
 
 @media (max-width: 425px) {
   section article .section-title {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 }
 

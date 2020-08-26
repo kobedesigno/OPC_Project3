@@ -95,6 +95,11 @@ main section article .menu
     justify-content: space-between;
     text-align: left;
     margin-top: 15px;
+    @include for-phone-only
+    {
+        text-align: center;
+        flex-direction: column;
+    }
     @include for-tablet-portrait-up
     {
         margin-top: 5px;
@@ -120,6 +125,10 @@ main section article .menu p:nth-child(2)
    font-weight: bold;
    text-align: right;
    margin: 0;
+   @include for-phone-only
+   {
+       text-align: center;
+   }
 }
 .section-title
 {

@@ -6,8 +6,11 @@
     background-color: $cd-btn1-end;
     transition: transform 1s, background-color 1000ms;
     &:hover {
-        transform: scale(1.10);
-        background-color: lighten($cd-btn1-end, 2%);
+        .zoom {
+                transition: transform 1s;
+                transform: scale(1.20);
+        }
+        background-color: lighten($cd-btn1-end, 5%);
     }
 }
 
@@ -17,8 +20,11 @@
     background-color: $cd-btn2-end;
     transition: transform 1s, background-color 1000ms;
     &:hover {
-        transform: scale(1.10);
-        background-color: lighten($cd-btn2-end, 10%);
+        .zoom {
+            transition: transform 1s;
+            transform: scale(1.20);
+        }   
+        background-color: lighten($cd-btn2-end, 5%);
     }
 }
 
@@ -27,8 +33,11 @@
     background-color: $cd-btn3-end;
     transition: transform 1s, background-color 1000ms;
     &:hover {
-        transform: scale(1.10);
-        background-color: lighten($cd-btn3-end, 10%);
+        .zoom {
+            transition: transform 1s;
+            transform: scale(1.20);
+        }
+        background-color: lighten($cd-btn3-end, 5%);
     }
 }
 
@@ -38,7 +47,11 @@
     background-color: $cd-btn4-start;
     transition: transform 1s, background-color 1000ms;
     &:hover {
-        transform: scale(1.10);
+        .zoom {
+            transition: transform 1s;
+            transform: scale(1.20);
+        }
         background-color: lighten($cd-btn4-start, 5);
     }
 }
+

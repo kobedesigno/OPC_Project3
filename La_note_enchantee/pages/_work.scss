@@ -5,6 +5,10 @@
 main
 {
     height: 80%;
+    @include for-phone-only
+    {
+        height: 110%;
+    }
 }
 main h2
 {
@@ -73,6 +77,11 @@ main section article .menu
     {
         margin-top: 5px;
     }
+    @include for-phone-only
+    {
+        text-align: center;
+        flex-direction: column;
+    }
 }
 main section article .menu p:nth-child(1)
 {
@@ -90,6 +99,10 @@ main section article .menu p:nth-child(2)
    font-weight: bold;
    text-align: right;
    margin: 0;
+   @include for-phone-only
+   {
+       text-align: center;
+   }
 }
 .section-title
 {
@@ -170,7 +183,7 @@ section article .section-title{
   }
   @include for-phone-only
   {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
   @include for-desktop-up
   {

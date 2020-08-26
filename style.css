@@ -23,9 +23,16 @@ a {
 }
 
 .btn1:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  background-color: rgba(251, 220, 222, 0.521);
+  background-color: rgba(253, 234, 235, 0.521);
+}
+
+.btn1:hover .zoom {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .btn2 {
@@ -38,9 +45,16 @@ a {
 }
 
 .btn2:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  background-color: rgba(255, 255, 255, 0.521);
+  background-color: rgba(253, 249, 252, 0.521);
+}
+
+.btn2:hover .zoom {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .btn3 {
@@ -53,9 +67,16 @@ a {
 }
 
 .btn3:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  background-color: rgba(248, 248, 248, 0.521);
+  background-color: rgba(235, 235, 236, 0.521);
+}
+
+.btn3:hover .zoom {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .btn4 {
@@ -68,9 +89,16 @@ a {
 }
 
 .btn4:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
   background-color: white;
+}
+
+.btn4:hover .zoom {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 header {
@@ -212,29 +240,10 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 140vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-@media (max-width: 768px) {
-  main {
-    height: 330vh;
-  }
-}
-
-@media (max-width: 425px) {
-  main {
-    height: 330vh;
-  }
-}
-
-@media (min-width: 1200px) {
-  main {
-    height: 250vh;
-  }
 }
 
 main section {
@@ -251,7 +260,7 @@ main section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -260,7 +269,7 @@ main section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 0;
+    margin-top: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -269,20 +278,20 @@ main section {
 
 @media (min-width: 1200px) {
   main section {
-    margin-top: 80px;
+    margin-top: 30px;
   }
 }
 
 @media (min-width: 2560px) {
   main section {
-    margin-top: 120px;
+    margin-top: 50px;
   }
 }
 
 main section a {
   height: 100%;
-  width: 40%;
-  min-height: 500px;
+  width: 30%;
+  min-height: 400px;
   -webkit-box-shadow: 1px 1px 12px #c0bdbd;
           box-shadow: 1px 1px 12px #c0bdbd;
   display: -webkit-box;
@@ -303,8 +312,8 @@ main section a {
 
 @media (max-width: 768px) {
   main section a {
-    margin-top: 8%;
-    min-height: 400px;
+    margin-top: 5%;
+    min-height: 500px;
     width: 50%;
   }
 }
@@ -312,17 +321,25 @@ main section a {
 @media (min-width: 1200px) {
   main section a {
     max-width: 35%;
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 2560px) {
+  main section a {
+    min-height: 800px;
   }
 }
 
 @media (max-width: 425px) {
   main section a {
     margin-top: 10%;
+    width: 60%;
   }
 }
 
 main section a:nth-child(2) {
-  margin-right: 60px;
+  margin-right: 30px;
 }
 
 @media (max-width: 768px) {
@@ -333,27 +350,27 @@ main section a:nth-child(2) {
 
 @media (min-width: 1200px) {
   main section a:nth-child(2) {
-    margin-right: 80px;
+    margin-right: 30px;
   }
 }
 
 @media (min-width: 2560px) {
   main section a:nth-child(2) {
-    margin-right: 120px;
+    margin-right: 60px;
   }
 }
 
 .second {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .menu {
-  font-size: 35px;
+  font-size: 25px;
 }
 
 @media (min-width: 1200px) {
   .menu {
-    font-size: 45px;
+    font-size: 35px;
   }
 }
 
@@ -376,14 +393,14 @@ main section a:nth-child(2) {
 }
 
 p {
-  font-size: 30px;
+  font-size: 25px;
   margin: 3px auto;
   text-align: center;
 }
 
 @media (min-width: 1200px) {
   p {
-    font-size: 45px;
+    font-size: 35px;
   }
 }
 
@@ -402,6 +419,7 @@ p {
 @media (max-width: 425px) {
   p {
     font-size: 25px;
+    white-space: wrap;
   }
 }
 
@@ -459,6 +477,18 @@ aside {
   min-height: 200px;
 }
 
+@media (min-width: 2560px) {
+  aside {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  aside {
+    min-height: 250px;
+  }
+}
+
 aside a {
   height: 50px;
   width: 380px;
@@ -480,7 +510,10 @@ aside a {
 
 aside a:hover .loading span {
   display: inline-block;
-  margin-right: 5px;
+}
+
+aside a:hover .loading {
+  margin-right: 20px;
 }
 
 aside a:hover aside a div {
@@ -508,7 +541,7 @@ aside a:hover aside a div {
     height: 90px;
     line-height: 2.7em;
     border-radius: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 
@@ -517,7 +550,7 @@ aside a:hover aside a div {
     width: 800px;
     height: 130px;
     border-radius: 30px;
-    line-height: 3.8em;
+    line-height: 4em;
     margin-top: 40px;
   }
 }
@@ -543,8 +576,8 @@ aside a p {
 }
 
 .loading span {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   margin: auto;
   background-color: #FFA726;
   border-radius: 50%;
@@ -561,15 +594,15 @@ aside a p {
 
 @media (min-width: 1200px) {
   .loading span {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
 }
 
 @media (min-width: 2560px) {
   .loading span {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -586,16 +619,16 @@ aside a p {
 @-webkit-keyframes dots {
   50% {
     opacity: 0;
-    -webkit-transform: scale(0.7) translateY(10px);
-            transform: scale(0.7) translateY(10px);
+    -webkit-transform: scale(0.7) translateY(15px);
+            transform: scale(0.7) translateY(15px);
   }
 }
 
 @keyframes dots {
   50% {
     opacity: 0;
-    -webkit-transform: scale(0.7) translateY(10px);
-            transform: scale(0.7) translateY(10px);
+    -webkit-transform: scale(0.7) translateY(15px);
+            transform: scale(0.7) translateY(15px);
   }
 }
 /*# sourceMappingURL=style.css.map */
